@@ -1,0 +1,295 @@
+body{
+    background-image: url("imagenes/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+}
+
+.contenedor {
+    display: flex;
+    width: 94%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 3% auto;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 32px;
+}
+
+
+.logoAlura{
+    margin-left: 20px;
+    width: 5%;
+    filter: hue-rotate(0) saturate(0.0) brightness(100.0);
+} 
+
+.textoIngresado{
+    border: none;
+    outline: none;
+    margin-top: 70px;
+    margin-left: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    background: none;
+    text-transform: lowercase;
+}
+
+::placeholder{
+    color: #FFFFFF;
+}
+
+.textoIngresado:focus{
+    outline: none;
+}
+
+div .textoIngresado:hover{
+    background-image: url("imagenes/Fondo_Texto_Ingresado.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.82;
+}
+
+.advertencia{
+    display: flex;
+}
+
+.signoDeExclamacion{
+    margin-top: 16px;
+    margin-left: 64px;
+    width: 16px;
+    height: auto;
+}
+
+.mensajeDeInteres {
+    margin-top: 16px;
+    margin-left: 4px;
+    width: 206px;
+    height: 18px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.botones{
+    display: flex;
+}
+
+.botonEncriptar{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 24px;   
+    width: 296px;
+    height: 67px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.botonDesencriptar {
+    margin-top: 10px;
+    margin-left: 16px;
+    padding: 24px;   
+    width: 296px;
+    height: 67px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.cuadroDelMensaje{
+    margin-left: 32px;
+    width: 236px;
+    height: 522px;
+    padding: 32px;
+    background-color: rgb(255 255 255 / 0.3);
+    border-radius: 32px;
+}
+
+.contenidoCuadro{
+    display: inline-block;
+}
+
+.animeBuscador{
+    width: 236px;
+}
+
+.ningunMensaje {
+    margin-top: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    color: #343A40;
+}
+
+.solicitud {
+    margin-top: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+}
+
+.areaDeCifrado{
+    display: none;
+}
+
+.fondoAreaMensaje{
+    position: absolute;
+    width: 236px;
+    height: 480px;
+    background-image: url("imagenes/Fondo_Mensaje.jpg");
+    border-radius: 15px;
+}
+
+.mensaje{
+    position: relative;
+    width: 232px;
+    height: 476px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #343A40;
+    line-height: 43px;
+    border-radius: 15px;
+    background-color: rgb(255 255 255 / 0.3);  
+    text-transform: lowercase;
+}
+
+.copiarMensaje{
+    padding: 24px;   
+    width: 236px;
+    height: 67px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+footer{   
+    height: 60px;
+    padding: 10px;
+    background-color: #0A3871;
+}
+.pikachu{
+    float: left;
+    width: 80px;
+}
+
+.sonic{
+    float: right;
+    width: 60px;
+}
+
+.copyright{
+    position: relative;
+    top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+/*tamaño para tablets*/
+
+@media screen and (max-width: 940px) {
+    
+    .contenedor{
+        display: inline-block;
+        width: 100%;
+        padding: 40px;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .textoIngresado{
+        margin-left: 0;
+        width: 100%;
+        font-size: 32px;
+    }
+    
+    .signoDeExclamacion{
+        margin-left: 0;
+    }
+
+    .botonEncriptar{
+        width: 332px;
+        margin-left: 0;
+        margin-right: auto;
+        
+    }
+
+    .botonDesencriptar{
+        width: 332px;
+        margin-left: auto;
+    }
+
+    .cuadroDelMensaje{
+        margin: 3% auto;
+    }
+
+}
+
+/*tamaño para smartfun*/
+
+@media screen and (max-width: 767px) {
+    
+    .contenedor{
+        padding: 16px;
+    }
+
+    .botones{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        width: 343px;
+        margin-top: 16px;
+    }
+}

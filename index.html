@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-sacalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <body>              
+
+        <div class="contenedor">
+
+            <section>
+
+                <header>
+                    <img class="logoAlura" src="imagenes/Logo_Alura.png" alt="Logo Alura">            
+                </header>
+           
+                <div>
+                    <textarea class="textoIngresado" onkeypress=" return (event.charCode == 32 || event.charCode >= 97 && event.charCode <= 122)" cols="30" rows="10" placeholder="ingrese el texto aqui" alt="aréa de ingreso de texto"></textarea>
+                </div>
+
+                <div class="advertencia">
+                    <img class="signoDeExclamacion" src="imagenes/Signo_Exclamacion.png" alt="signo de exclamación">
+                    <p class="mensajeDeInteres">Solo letras minúsculas y sin acentos</p>
+                </div>
+                    
+                <div class="botones">
+                    <input type="button" id="encriptar" value="Encriptar" class="botonEncriptar">
+                    <input type="button" id="desencriptar"  value="Desencriptar" class="botonDesencriptar">           
+                </div>
+                
+            </section>
+
+            <section>
+                <div class="cuadroDelMensaje">
+                                       
+                    <div class="contenidoCuadro">
+                        <img class="animeBuscador" src="imagenes/Find_the_code.png" alt="imagen de buscar">
+                        <h2 class="ningunMensaje">Ningún mensaje fue encontrado</h2>
+                        <p class="solicitud">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+
+                    <div class="areaDeCifrado">
+                        <div class="fondoAreaMensaje"></div>
+                        <textarea class="mensaje" cols="30" rows="10" alt="área del mensaje"></textarea>
+                        <input type="button" id="copiar" value="Copiar" class="copiarMensaje">
+                    </div>
+
+                </div>
+            </section>
+        </div>
+ 
+        <footer>
+            <img class="pikachu" src="imagenes/Running_Pikachu.gif" alt="Running Pikachu">
+            <img class="sonic" src="imagenes/Sonic_Smerald.gif" alt="Sonic Smerald">
+            <p class="copyright">Eddy Calan - 2023</p>
+        </footer>                 
+    
+    </body>
+
+    <script src="./script.js"></script>
+
+    <script src = "https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+
+    
+</html>
