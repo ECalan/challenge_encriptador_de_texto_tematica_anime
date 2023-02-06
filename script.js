@@ -21,11 +21,24 @@ function botonEncriptar(){
 }
 
 function botonDesencriptar(){
-    var textoIngresado = document.getElementsByClassName("textoIngresado")[0].value;
+    var texto = document.getElementsByClassName("textoIngresado")[0].value;
     var mapearObjeto = {ai:"a", enter:"e", imes:"i", ober:"o", ufat:"u"};
-    textoIngresado = textoIngresado.replace(/ai|enter|imes|ober|ufat/g, function(encontrado){return mapearObjeto[encontrado]})
-    document.querySelector(".mensaje").value = (textoIngresado);
+
+    if(texto == ""){
+        Swal.fire ({title: 'Por favor ingrese texto',
+        icon: "warning",
+        color: '#0A3871',
+        backdrop: `rgba(0,0,0,0.4)`,
+        showConfirmButton: false,
+        timer: 1150});
+    }
+    else{
+    document.querySelector(".contenidoCuadro").style.display ="none";
+    document.querySelector(".areaDeCifrado").style.display ="inline-block";
+    texto = texto.replace(/ai|enter|imes|ober|ufat/g, function(encontrado){return mapearObjeto[encontrado]})
+    document.querySelector(".mensaje").value = (texto);
     document.querySelector(".textoIngresado").value ="";
+    }
 }
 
 function botonCopiar(){
