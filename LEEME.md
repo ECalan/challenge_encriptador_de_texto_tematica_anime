@@ -7,7 +7,7 @@
 
 
 
-### pequeño programa para encriptar cualquier texto sin comillas
+### Pequeño programa para encriptar cualquier texto sin comillas
 
 Solamente coloque el texto que desea donde se indica y luego oprima el botón  encriptar, le aparecera en el costado su mensaje encriptado.
 
